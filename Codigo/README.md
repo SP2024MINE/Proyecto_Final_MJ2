@@ -1,0 +1,7 @@
+MERCADO BANCARIO
+
+Este dataset se compone de 45.211 registros de clientes que han sido contactados en campañas de marketing. Cada instancia tiene datos asociados sobre características específicas del cliente y la campaña, y el objetivo es clasificar estas instancias para predecir si el cliente aceptará una oferta de depósito a plazo (variable objetivo).
+
+En el cuaderno_modelado_RL.ipynb, se importan las librerías necesarias para el análisis de datos y se carga un conjunto de datos desde el repositorio UCI, que luego es explorado en detalle. Se realiza una definición clara de las variables categóricas y numéricas, preparándolas para el preprocesamiento. Durante esta etapa, se aplican diversas transformaciones a todas las variables: las variables numéricas son normalizadas, y las variables categóricas se convierten en columnas binarias. Posteriormente, se divide el conjunto de datos en entrenamiento y prueba. Con los datos preprocesados, se crea un pipeline que facilita el entrenamiento del modelo y, tras ello, se realizan predicciones sobre el conjunto de prueba. Finalmente, se evalúa la precisión del modelo para medir su rendimiento.
+
+Para finalizar se prueba el modelo con la entrada de un cliente específico y se genera una predicción personalizada.
